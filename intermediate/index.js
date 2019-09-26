@@ -150,3 +150,17 @@ var i = 0
         document.writeln("</td>");
     }
 
+var i = 0
+    document.writeln("<table border='2'><tr>");
+    for (i = 0; i < companyXy.employee.length; i++) {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>Id</b></td><td width=50>" + companyXy.employee[i].id + "</td></tr>");
+        document.writeln("<tr><td><b>Name</b></td><td width=50>" + companyXy.employee[i].first_name + "</td></tr>");
+        document.writeln("<tr><td><b>E-Mail</b></td><td width=50>" + companyXy.employee[i].email + "</td></tr>");
+        document.writeln("<tr><td><b>Job Title</b></td><td width=50>" + companyXy.employee[i].job_title + "</td></tr>");
+        document.writeln("<tr><td><b>Sallery</b></td><td width=50>" + companyXy.employee[i].sallery + "</td></tr>");
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+
