@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Website</title>
+</head>
+<body>
+<script>
+
+var coolefirma=
+{
+
+   "employee": [{
+
+       "unique_id": "00001",
+
+       "First_Name": "Tom",
+
+       "Last_Name": "Araya",
+
+       "email": "tom.araya@sl.com",
+
+       "Job_title": "Singer",
+
+       "Salary": 100000
+
+   }, {
+
+       "unique_id": "00002",
+
+       "First_Name": "Jeff",
+
+       "Last_Name": "Hannemann",
+
+       "email": "jeff.hannemann@sl.com",
+
+       "Job_title": "Guitar_Player",
+       
+       "Salary": 50000
+
+   }
+,
+   {
+
+       "unique_id": "00003",
+
+       "First_Name": "Kerry",
+
+       "Last_Name": "King",
+
+       "email": "kerry.king@sl.com",
+
+       "Job_title": "Guitar_Player2",
+
+       "Salary": 50000
+
+
+   }
+,
+   {
+
+       "unique_id": "00004",
+
+       "First_Name": "Dave",
+
+       "Last_Name": "Lombardo",
+
+       "email": "dave.lombardo@sl.com",
+
+       "Job_title": "Drum_Player",
+       
+       "Salary": 80000
+
+
+   }
+,
+     {
+
+       "unique_id": "00005",
+
+       "First_Name": "Paul",
+
+       "Last_Name": "Bostaph",
+
+       "email": "paul.bostaph@sl.com",
+
+       "Job_title": "Drum_Player",
+       
+       "Salary": 80000
+
+
+   }
+,
+   {
+
+       "unique_id": "00006",
+
+       "First_Name": "James",
+
+       "Last_Name": "Hetfield",
+
+       "email": "james.hetfield@sl.com",
+
+       "Job_title": "Singer",
+       
+       "Salary": 100000
+
+
+   }
+,
+   {
+
+       "unique_id": "00007",
+
+       "First_Name": "Cliff",
+
+       "Last_Name": "Burton",
+
+       "email": "cliff.burton@sl.com",
+
+       "Job_title": "Bass_player",
+       
+       "Salary": 100000000000000
+
+
+   }
+   ,
+   {
+
+       "unique_id": "00008",
+
+       "First_Name": "Kirk",
+
+       "Last_Name": "Hammet",
+
+       "email": "kirk.hammet@sl.com",
+
+       "Job_title": "Guitar_player",
+       
+       "Salary": 50000
+
+
+   }
+   ,
+      {
+
+       "unique_id": "00009",
+
+       "First_Name": "Lars",
+
+       "Last_Name": "Ulrich",
+
+       "email": "lars.ulrich@sl.com",
+
+       "Job_title": "Drum_Player",
+       
+       "Salary": 10
+
+
+   }
+   ,
+      {
+
+       "unique_id": "00010",
+
+       "First_Name": "Jason",
+
+       "Last_Name": "Newsted",
+
+       "email": "Jason.newsted@sl.com",
+
+       "Job_title": "Bass_player",
+       
+       "Salary": 1000000
+
+
+   }
+
+   ]
+
+}
+
+var i = 0
+    document.writeln("<table border='2'><tr>");
+    for (i = 0; i < coolefirma.employee.length; i++) 
+
+    {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>Name</b></td><td width=50>" + coolefirma.employee[i].unique_id + "</td></tr>");
+        document.writeln("<tr><td><b>First_Name</b></td><td width=50>" + coolefirma.employee[i].First_Name + "</td></tr>");
+        document.writeln("<tr><td><b>Last_Name</b></td><td width=50>" + coolefirma.employee[i].Last_Name + "</td></tr>");
+
+		document.writeln("<tr><td><b>email</b></td><td width=50>" + coolefirma.employee[i].email + "</td></tr>");
+		document.writeln("<tr><td><b>Job title</b></td><td width=50>" + coolefirma.employee[i].Job_title + "</td></tr>");
+		document.writeln("<tr><td><b>Salary</b></td><td width=50>" + coolefirma.employee[i].Salary + "</td></tr>");
+		 
+
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
+
+<!-- Create a JSON schema which contains the following details per employee:
+
+Unique ID
+First Name
+Last Name
+Email address
+Job Title
+Salary
+Fill the schema with meaningful data for 10 Employees. Print each employee's details in a table which will look representative and easily readable for the management team. -->
